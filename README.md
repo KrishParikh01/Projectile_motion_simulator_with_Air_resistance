@@ -62,5 +62,5 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 🙌 Acknowledgments
 
-- [Physics Classroom](https://www.physicsclassroom.com/class/vectors/Lesson-2/Projectile-Motion) - For foundational physics concepts.
+- [Physics Classroom]([https://www.physicsclassroom.com/class/vectors/Lesson-2/Projectile-Motion](https://www.physicsclassroom.com/class/vectors/Lesson-2/Characteristics-of-a-Projectile-s-Trajectory)) - For foundational physics concepts.
 - [Open Source Community](https://opensource.guide/) - For guidance and support in developing open-source software.
