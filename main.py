@@ -86,14 +86,15 @@ def open_theory():
 # ---------- GUI Setup ----------
 root = tk.Tk()
 root.title("Projectile Motion Simulator with Real-Time Visualization")
-root.geometry("800x600")
-root.config(bg="black")
+root.geometry("1000x900")
+root.config(bg="#ededed")
 
 # Title Label
 title_label = tk.Label(
-    root, text="Projectile Motion Simulator", font=("Arial", 20, "bold"), bg="black", fg="orange"
+    root, text="Projectile Motion Simulator", font=("Arial", 20, "bold"), bg="#ededed", fg="orange"
 )
 title_label.pack(pady=10)
+
 
 # Input Frame
 input_frame = ttk.Frame(root)
@@ -116,11 +117,13 @@ ttk.Label(input_frame, text="Drag Coefficient (kg/s):").grid(row=3, column=0, pa
 entry_drag = ttk.Entry(input_frame)
 entry_drag.grid(row=3, column=1, padx=5, pady=5)
 
+simulate_frame=ttk.Frame(root)
+simulate_frame.pack(pady=15)
 # Button Frame
 button_frame = ttk.Frame(root)
 button_frame.pack(pady=10)
 
-simulate_button = ttk.Button(button_frame, text="Simulate", command=simulate_motion)
+simulate_button = ttk.Button(simulate_frame, text="Simulate !", command=simulate_motion)
 simulate_button.grid(row=0, column=0, padx=10)
 
 reset_button = ttk.Button(button_frame, text="Reset", command=reset_fields)
@@ -144,7 +147,7 @@ canvas.get_tk_widget().pack(side=tk.TOP, fill=tk.BOTH, expand=True)
 
 # Footer Label
 footer_label = tk.Label(
-    root, text="Physics + Code = 🚀", font=("Arial", 10, "italic"), bg="black", fg="orange"
+    root, text="Physics + Code = 🚀", font=("Arial", 10, "italic"), bg="#ededed", fg="orange"
 )
 footer_label.pack(pady=10)
 
